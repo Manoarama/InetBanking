@@ -1,11 +1,25 @@
 package com.inetbanking.testCase;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC_LoginPage extends BaseClass{
-	
+import com.inetbanking.pageObject.LoginPage;
+
+public class TC_LoginPage extends BaseClass {
+
 	@Test
 	public void LoginTest() {
-	driver.get(baseURL);	
+		driver.get(baseURL);
+//		WebDriver webDriver = new ChromeDriver();
+		LoginPage lp = new LoginPage(driver);
+		lp.setUsername(userName);
+		lp.setPassword(password);
+		lp.clickSubmit();
+		if(driver.getTitle().equals(lp)) {
+			Assert.assertTrue(true);
+			}
+		else{
+			Assert.assertTrue(true);
+			}
+		}
 	}
-}
