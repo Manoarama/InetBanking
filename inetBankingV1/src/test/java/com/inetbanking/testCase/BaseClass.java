@@ -1,5 +1,6 @@
 package com.inetbanking.testCase;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -16,6 +17,7 @@ public class BaseClass {
 	public void setup() {
 		WebDriverManager.firefoxdriver().setup();
 		driver=new FirefoxDriver();
+		Logger logger=Logger.getLogger("inetBanking");
 	}
 	
 	@AfterClass

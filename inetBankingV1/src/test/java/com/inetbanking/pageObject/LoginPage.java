@@ -36,7 +36,7 @@ public class LoginPage {
 	public void setPassword(String pwd) {
 		txtUserName.sendKeys(pwd);	
 	}
-	public void clickSubmit(String pwd) {
+	public void clickSubmit() {
 		btnLogin.click();	
 	}
 	
