@@ -15,11 +15,12 @@ public class BaseClass {
 	public String userName="";
 	public String password="";
 	public static WebDriver driver;
+	public static Logger logger;
 	@BeforeClass
 	public void setup() {
 		WebDriverManager.firefoxdriver().setup();
 		driver=new FirefoxDriver();
-		Logger logger=Logger.getLogger("ebanking");
+		logger=Logger.getLogger("ebanking");
 		PropertyConfigurator.configure("Log4j.property");
 		}
 	

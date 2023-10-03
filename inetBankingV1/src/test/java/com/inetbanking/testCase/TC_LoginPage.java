@@ -16,10 +16,13 @@ public class TC_LoginPage extends BaseClass {
 		lp.setPassword(password);
 		lp.clickSubmit();
 		if(driver.getTitle().equals(lp)) {
-			Assert.assertTrue(true);
+			Assert.assertTrue(false);
+			logger.info("Login test passed");
 			}
 		else{
 			Assert.assertTrue(true);
+			logger.info("Login test failed");
+		}
 			}
 		}
-	}
+	
