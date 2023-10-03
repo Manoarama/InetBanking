@@ -4,9 +4,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.inetbanking.pageObject.LoginPage;
+import com.inetbanking.utilities.ReadConfig;
 
 public class TC_LoginPage extends BaseClass {
-
+	ReadConfig readConfig=new ReadConfig();
+	public String baseURL=readConfig.getURL();
+	public String userName=readConfig.getUserName();
+	public String password=readConfig.getPassword();
 	@Test
 	public void LoginTest() {
 		driver.get(baseURL);
@@ -25,4 +29,4 @@ public class TC_LoginPage extends BaseClass {
 		}
 			}
 		}
-	
+		
