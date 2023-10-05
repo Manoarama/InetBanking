@@ -21,15 +21,17 @@ public class BaseClass {
 	public void setup(String br) {
 		logger=Logger.getLogger("ebanking");
 		PropertyConfigurator.configure("Log4j.property");
-		if (br.equals("firefox")) {
+		WebDriverManager.firefoxdriver().setup();
+		driver=new FirefoxDriver();	
+		if (br.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 		driver=new FirefoxDriver();	
 		}
-		else if (br.equals("Chrome")) {
+		else if (br.equalsIgnoreCase("Chrome")) {
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 	}
-		else if (br.equals("ie")) {
+		else if (br.equalsIgnoreCase("ie")) {
 			WebDriverManager.chromedriver().setup();}
 		driver=new InternetExplorerDriver();
 

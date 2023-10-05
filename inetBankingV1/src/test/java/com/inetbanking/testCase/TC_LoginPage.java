@@ -13,7 +13,7 @@ public class TC_LoginPage extends BaseClass {
 	public String password=readConfig.getPassword();
 	@Test
 	public void LoginTest() {
-		driver.get(baseURL);
+		//driver.get(baseURL);
 //		WebDriver webDriver = new ChromeDriver();
 		LoginPage lp = new LoginPage(driver);
 		lp.setUsername(userName);
