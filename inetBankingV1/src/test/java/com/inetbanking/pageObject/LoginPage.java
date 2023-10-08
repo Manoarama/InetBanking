@@ -14,15 +14,15 @@ public class LoginPage {
 		PageFactory.initElements(rdriver, this);
 	}
 
-	@FindBy(name = "uid")
+	@FindBy(id = "email")
 	@CacheLookup
 	WebElement txtUserName;
 
-	@FindBy(name = "password")
+	@FindBy(id = "password")
 	@CacheLookup
 	WebElement txtPassword;
 
-	@FindBy(name = "btnLogin")
+	@FindBy(id="login-button")
 	@CacheLookup
 	WebElement btnLogin;
 
@@ -31,7 +31,7 @@ public class LoginPage {
 	}
 
 	public void setPassword(String pwd) {
-		txtUserName.sendKeys(pwd);
+		txtPassword.sendKeys(pwd);
 	}
 	public void clickSubmit() {
 		btnLogin.click();	

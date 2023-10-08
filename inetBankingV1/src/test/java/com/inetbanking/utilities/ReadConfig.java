@@ -9,7 +9,9 @@ public class ReadConfig {
 
 	public ReadConfig() {
 		try {
-			File src = new File("./Configuration/config.properties");
+			File src = new File("./configuration/config.properties");
+			
+			//File src = new File("//C://Users//91955//git//InetBanking//inetBankingV1//configuration//config.properties/");
 			FileInputStream fis = new FileInputStream(src);
 			prop = new Properties();
 			prop.load(fis);
@@ -18,18 +20,19 @@ public class ReadConfig {
 		}
 	}
 	
+
 	public String getURL() {
-		String url = prop.getProperty("baseURL");
+		String url = prop.getProperty("baseurl");
 		return url;
 	}
 
 	public String getUserName() {
-		String userName = prop.getProperty("userName");
+		String userName = prop.getProperty("username");
 		return userName;
 	}
 	
 	public String getPassword() {
-		String password = prop.getProperty("userName");
+		String password = prop.getProperty("password");
 		return password;
 	}
 }
