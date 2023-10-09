@@ -10,8 +10,6 @@ public class ReadConfig {
 	public ReadConfig() {
 		try {
 			File src = new File("./configuration/config.properties");
-			
-			//File src = new File("//C://Users//91955//git//InetBanking//inetBankingV1//configuration//config.properties/");
 			FileInputStream fis = new FileInputStream(src);
 			prop = new Properties();
 			prop.load(fis);
