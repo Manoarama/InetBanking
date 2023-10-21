@@ -1,0 +1,14 @@
+2023-10-11 18:23:14,340 [main] INFO  com.inetbanking.testCase.BaseClass - method set up started
+2023-10-11 18:23:18,092 [main] INFO  com.inetbanking.testCase.BaseClass - method set up completed
+2023-10-11 18:23:18,097 [main] INFO  com.inetbanking.testCase.BaseClass - Started firefox login test
+2023-10-11 18:23:20,058 [main] INFO  com.inetbanking.testCase.BaseClass - Logged into page succesfully
+2023-10-11 18:23:20,063 [main] INFO  com.inetbanking.testCase.BaseClass - Login test failed
+2023-10-11 18:23:20,063 [main] INFO  com.inetbanking.testCase.BaseClass - Ended firefox login test
+2023-10-11 18:23:20,065 [main] INFO  com.inetbanking.testCase.BaseClass - Started Chrome login test
+2023-10-11 18:29:49,915 [main] INFO  com.inetbanking.testCase.BaseClass - method set up started
+2023-10-11 18:29:53,578 [main] INFO  com.inetbanking.testCase.BaseClass - method set up completed
+2023-10-11 18:29:53,584 [main] INFO  com.inetbanking.testCase.BaseClass - Started firefox login test
+2023-10-11 18:29:55,830 [main] INFO  com.inetbanking.testCase.BaseClass - Logged into page succesfully
+2023-10-11 18:29:55,835 [main] INFO  com.inetbanking.testCase.BaseClass - Login test failed
+2023-10-11 18:29:55,835 [main] INFO  com.inetbanking.testCase.BaseClass - Ended firefox login test
+2023-10-11 18:29:55,837 [main] INFO  com.inetbanking.testCase.BaseClass - Started Chrome login test

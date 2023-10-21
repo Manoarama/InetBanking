@@ -15,6 +15,7 @@ public class ReadConfig {
 			prop.load(fis);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
+			System.out.println("Test");
 		}
 	}
 	
